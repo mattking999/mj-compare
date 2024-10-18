@@ -291,5 +291,20 @@ function showMaintenanceBanner() {
     }
 }
 
-// Initiate fetching pharmacies on load
-window.onload = fetchPharmaciesFromGoogleSheet;
+// Add version number to the top right corner
+function addVersionNumber() {
+    const versionDiv = document.createElement("div");
+    versionDiv.id = "version-number";
+    versionDiv.style.position = "absolute";
+    versionDiv.style.top = "10px";
+    versionDiv.style.right = "10px";
+    versionDiv.style.fontSize = "14px";
+    versionDiv.style.fontWeight = "bold";
+    versionDiv.textContent = "Version 0.0.3"; // Change this version number as needed
+    document.body.appendChild(versionDiv);
+}
+
+window.onload = function() {
+    fetchPharmaciesFromGoogleSheet(); // Fetch data from Google Sheets
+    addVersionNumber(); // Add the version number when the page loads
+};
