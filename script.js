@@ -286,7 +286,7 @@ function calculateBestPriceForDose(dose) {
 function showMaintenanceBanner() {
     if (maintenanceMode) {
         const banner = document.createElement("div");
-        banner.innerHTML = "<h3 style='color: red;'>Maintenance Mode: Some features may be unavailable.</h3>";
+        banner.innerHTML = "<h3 style='color: red;'>We're currently updating the pricing information. Some data maybe incorrect during this time.</h3>";
         flowchart.appendChild(banner);
     }
 }
