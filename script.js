@@ -222,12 +222,12 @@ function askDoseSelection() {
     flowchart.innerHTML = ""; 
     const question = document.createElement("div");
     question.innerHTML = `<h2>Which dose of Mounjaro are you looking to purchase?</h2>
-        <button class="doseBtn" value="2.5mg">2.5mg</button>
-        <button class="doseBtn" value="5mg">5mg</button>
-        <button class="doseBtn" value="7.5mg">7.5mg</button>
-        <button class="doseBtn" value="10mg">10mg</button>
-        <button class="doseBtn" value="12.5mg">12.5mg</button>
-        <button class="doseBtn" value="15mg">15mg</button>`;
+        <button class="doseBtn" value="2.5mg" style="background-color: #56585c;">2.5mg</button>
+        <button class="doseBtn" value="5mg" style="background-color: #3f2a5a;">5mg</button>
+        <button class="doseBtn" value="7.5mg" style="background-color: #337e70;">7.5mg</button>
+        <button class="doseBtn" value="10mg" style="background-color: #ba2b7d;">10mg</button>
+        <button class="doseBtn" value="12.5mg" style="background-color: #3674ba;">12.5mg</button>
+        <button class="doseBtn" value="15mg" style="background-color: #ee5243;">15mg</button>`;
     flowchart.appendChild(question);
 
     document.querySelectorAll('.doseBtn').forEach(button => {
@@ -305,7 +305,25 @@ function addVersionNumber() {
     document.body.appendChild(versionDiv);
 }
 
+// Function to create a red box at the top of the site
+function createTestingBanner() {
+    const banner = document.createElement("div");
+    banner.style.position = "fixed";
+    banner.style.top = "0";
+    banner.style.left = "0";
+    banner.style.width = "100%";
+    banner.style.backgroundColor = "red";
+    banner.style.color = "white";
+    banner.style.textAlign = "center";
+    banner.style.padding = "10px";
+    banner.style.zIndex = "1000"; // Make sure it's on top of other elements
+    banner.innerHTML = "We're still testing and updating this website. Please expect to experience some bugs. You can always contact us on TikTok @mj.compare";
+
+    document.body.appendChild(banner);
+}
+
 window.onload = function() {
     fetchPharmaciesFromGoogleSheet(); // Fetch data from Google Sheets
     addVersionNumber(); // Add the version number when the page loads
+    createTestingBanner(); //Add the "testing" banner on load
 };
