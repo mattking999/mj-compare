@@ -216,6 +216,7 @@ function recordSelectedPharmacies() {
     };
 }
 
+
 // Function to ask the dose selection
 function askDoseSelection() {
     flowchart.innerHTML = ""; 
