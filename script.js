@@ -130,7 +130,7 @@ function renderStars(rating) {
 function showResults() {
     results.innerHTML = ""; 
     if (userAnswers.bestPrices.length > 0) {
-        let message = "<h2>Best Prices</h2><div style='display: flex; justify-content: space-between;'>"; 
+        let message = "<h2>Best Prices (including delivery)</h2><div style='display: flex; justify-content: space-between;'>"; 
         userAnswers.bestPrices.forEach((pharmacy) => {
             const baseName = pharmacy.name.replace(/\s+/g, '').toLowerCase(); // Base name for logo
             const logoFileNamePng = `${baseName}-logo.png`; // For PNG format
