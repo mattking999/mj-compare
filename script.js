@@ -317,7 +317,7 @@ function createTestingBanner() {
     banner.style.textAlign = "center";
     banner.style.padding = "10px";
     banner.style.zIndex = "1000"; // Make sure it's on top of other elements
-    banner.innerHTML = "We're still testing and updating this website. Please expect to experience some bugs. You can always contact us on TikTok @mj.compare";
+    banner.innerHTML = "Please take note of the disclaimer at the bottom of this website before continuing.";
 
     document.body.appendChild(banner);
 }
