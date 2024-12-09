@@ -317,7 +317,7 @@ function createTestingBanner() {
     banner.style.textAlign = "center";
     banner.style.padding = "10px";
     banner.style.zIndex = "1000"; // Make sure it's on top of other elements
-    banner.innerHTML = "Please take note of the disclaimer at the bottom of this website before continuing.";
+    banner.innerHTML = "By continuing to use this website, you acknowledge and agree to the disclaimer at the bottom of this page.";
 
     document.body.appendChild(banner);
 }
