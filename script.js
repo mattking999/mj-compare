@@ -172,7 +172,7 @@ function startFlowchart() {
     showMaintenanceBanner(); 
 
     const question1 = document.createElement("div");
-    question1.innerHTML = `<h2>Have you ever bought Mounjaro from a UK-based pharmacy?</h2>
+    question1.innerHTML = `<h2>Have you ever bought from a UK-based pharmacy?</h2>
         <button id="yesBtn">Yes</button>
         <button id="noBtn">No</button>`;
     flowchart.appendChild(question1);
@@ -193,7 +193,7 @@ function startFlowchart() {
 function recordSelectedPharmacies() {
     flowchart.innerHTML = ""; 
     const question = document.createElement("div");
-    question.innerHTML = "<h2>Select the pharmacies you've bought Mounjaro from:</h2>";
+    question.innerHTML = "<h2>Select the pharmacies you've bought from:</h2>";
     
     pharmacies.forEach(pharmacy => {
         question.innerHTML += `<label>
@@ -221,7 +221,7 @@ function recordSelectedPharmacies() {
 function askDoseSelection() {
     flowchart.innerHTML = ""; 
     const question = document.createElement("div");
-    question.innerHTML = `<h2>Which dose of Mounjaro are you looking to purchase?</h2>
+    question.innerHTML = `<h2>Which dose are you looking to compare?</h2>
         <button class="doseBtn" value="2.5mg" style="background-color: #56585c;">2.5mg</button>
         <button class="doseBtn" value="5mg" style="background-color: #3f2a5a;">5mg</button>
         <button class="doseBtn" value="7.5mg" style="background-color: #337e70;">7.5mg</button>
