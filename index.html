@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+ charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weight-Loss Service Price Comparison</title>
     <link rel="icon" href="logos/mjcompare-logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-      
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYE3M53SZT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-ZYE3M53SZT');
-</script>
+    <script>
+      function loadGoogleAnalytics() {
+        var script = document.createElement("script");
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-ZYE3M53SZT";
+        script.async = true;
+        document.head.appendChild(script);
+
+        script.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZYE3M53SZT');
+        };
+      }
+
+      function acceptCookies() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        loadGoogleAnalytics();  // Load GA only after consent
+      }
+
+      function rejectCookies() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        // Do NOT load Google Analytics
+      }
+
+      window.onload = function() {
+        document.getElementById('cookie-banner').style.display = 'block'; // Always show banner on page load
+      };
+    </script>
 </head>
 
 <body>
@@ -46,6 +66,15 @@
     </div>
 
     <script src="script.js"></script>
+    
+    <!-- Cookie Banner -->
+<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #222; color: white; text-align: center; padding: 15px; display: none;">
+    <p style="margin: 0; font-size: 14px;">
+        This website uses cookies to ensure you get the best experience. 
+        <button onclick="acceptCookies()" style="margin-left: 10px; padding: 5px 10px; background: #4CAF50; color: white; border: none; cursor: pointer;">Accept</button>
+    </p>
+</div>
+    
 </body>
 </html>
 
