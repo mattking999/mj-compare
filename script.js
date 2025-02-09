@@ -172,9 +172,17 @@ function startFlowchart() {
     showMaintenanceBanner(); 
 
     const question1 = document.createElement("div");
-    question1.innerHTML = `<h2>Have you ever bought from a UK-based pharmacy?</h2>
-        <button id="yesBtn">Yes</button>
-        <button id="noBtn">No</button>`;
+    question1.innerHTML = `
+    <h2>Have you ever bought from a UK-based pharmacy?</h2>
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+    <br><br> <!-- Adds some spacing -->
+    
+    <!-- Hyperlinked Advert -->
+    <a href="https://sovrn.co/0uosrf5" target="_blank">
+        <img src="logos/advert-image.png" alt="Advert Description" style="width: 225px; display: block; margin: 10px auto;">
+    </a>
+`;
     flowchart.appendChild(question1);
 
     document.getElementById("yesBtn").onclick = function () {
@@ -221,19 +229,32 @@ function recordSelectedPharmacies() {
 function askDoseSelection() {
     flowchart.innerHTML = ""; 
     const question = document.createElement("div");
-    question.innerHTML = `<h2>Which dose are you looking to compare?</h2>
-        <button class="doseBtn" value="2.5mg" style="background-color: #56585c;">2.5mg</button>
-        <button class="doseBtn" value="5mg" style="background-color: #3f2a5a;">5mg</button>
-        <button class="doseBtn" value="7.5mg" style="background-color: #337e70;">7.5mg</button>
-        <button class="doseBtn" value="10mg" style="background-color: #ba2b7d;">10mg</button>
-        <button class="doseBtn" value="12.5mg" style="background-color: #3674ba;">12.5mg</button>
-        <button class="doseBtn" value="15mg" style="background-color: #ee5243;">15mg</button>`;
+    question.innerHTML = `
+    <h2>Which dose are you looking to compare?</h2>
+    <button class="doseBtn" value="2.5mg" style="background-color: #56585c;">2.5mg</button>
+    <button class="doseBtn" value="5mg" style="background-color: #3f2a5a;">5mg</button>
+    <button class="doseBtn" value="7.5mg" style="background-color: #337e70;">7.5mg</button>
+    <button class="doseBtn" value="10mg" style="background-color: #ba2b7d;">10mg</button>
+    <button class="doseBtn" value="12.5mg" style="background-color: #3674ba;">12.5mg</button>
+    <button class="doseBtn" value="15mg" style="background-color: #ee5243;">15mg</button>
+    <br><br>
+
+    <!-- Hyperlinked Advert -->
+    <a href="https://sovrn.co/0uosrf5" target="_blank" id="advert-link">
+        <img src="logos/advert-image.png" alt="Advert Description" style="width: 225px; display: block; margin: 10px auto;" id="advert-image">
+    </a>
+    `;
+
     flowchart.appendChild(question);
 
     document.querySelectorAll('.doseBtn').forEach(button => {
         button.onclick = function () {
             const selectedDose = this.value;
             calculateBestPriceForDose(selectedDose);
+
+            // Hide the advert once a button is clicked
+            document.getElementById("advert-link").style.display = 'none';
+            document.getElementById("advert-image").style.display = 'none';
         };
     });
 }
