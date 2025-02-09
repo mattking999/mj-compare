@@ -322,7 +322,7 @@ function addVersionNumber() {
     versionDiv.style.right = "10px";
     versionDiv.style.fontSize = "14px";
     versionDiv.style.fontWeight = "bold";
-    versionDiv.textContent = "Version 0.0.3"; // Change this version number as needed
+    versionDiv.textContent = " "; // Change this version number as needed
     document.body.appendChild(versionDiv);
 }
 
