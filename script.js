@@ -179,7 +179,7 @@ function startFlowchart() {
     <br><br> <!-- Adds some spacing -->
     
     <!-- Hyperlinked Advert -->
-    <a href="https://sovrn.co/0uosrf5" target="_blank">
+    <a href="https://sovrn.co/uephbk1" target="_blank">
         <img src="logos/advert-image.png" alt="Advert Description" style="width: 225px; display: block; margin: 10px auto;">
     </a>
 `;
