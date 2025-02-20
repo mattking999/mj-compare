@@ -1,3 +1,4 @@
+
 // Declare variables
 const flowchart = document.getElementById("flowchart");
 const results = document.getElementById("results");
@@ -177,19 +178,11 @@ function startFlowchart() {
     <button id="yesBtn">Yes</button>
     <button id="noBtn">No</button>
     <br><br> <!-- Adds some spacing -->
-
-    <!-- Container for Adverts -->
-    <div style="display: flex; justify-content: center; gap: 20px;">
-        <!-- First Advert -->
-        <a href="https://sovrn.co/uephbk1" target="_blank">
-            <img src="logos/advert-image.png" alt="Advert Description" style="width: 225px;">
-        </a>
-
-        <!-- Second Advert -->
-        <a href="https://sovrn.co/example2" target="_blank">
-            <img src="logos/advert-image2.png" alt="Second Advert Description" style="width: 225px;">
-        </a>
-    </div>
+    
+    <!-- Hyperlinked Advert -->
+    <a href="https://sovrn.co/uephbk1" target="_blank">
+        <img src="logos/advert-image.png" alt="Advert Description" style="width: 225px; display: block; margin: 10px auto;">
+    </a>
 `;
     flowchart.appendChild(question1);
 
@@ -247,22 +240,11 @@ function askDoseSelection() {
     <button class="doseBtn" value="15mg" style="background-color: #ee5243;">15mg</button>
     <br><br>
 
-    <!-- Container for Adverts -->
-    <div style="display: flex; justify-content: center; gap: 20px;">
-        <!-- First Advert -->
-        <a href="https://sovrn.co/0uosrf5" target="_blank">
-            <img src="logos/advert-image.png" alt="Advert Description" style="width: 225px;">
-        </a>
-
-        <!-- Second Advert -->
-        <a href="https://bit.ly/439Hixj" target="_blank">
-            <img src="logos/advert-image2.png" alt="Second Advert Description" style="width: 225px;">
-        </a>
-    </div>
+    <!-- Hyperlinked Advert -->
+    <a href="https://sovrn.co/0uosrf5" target="_blank" id="advert-link">
+        <img src="logos/advert-image.png" alt="Advert Description" style="width: 225px; display: block; margin: 10px auto;" id="advert-image">
+    </a>
     `;
-    flowchart.appendChild(question);
-}
-
 
     flowchart.appendChild(question);
 
