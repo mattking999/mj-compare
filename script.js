@@ -197,7 +197,6 @@ function startFlowchart() {
         userAnswers.previousPurchase = true;
         recordSelectedPharmacies();
     };
-}
 
     document.getElementById("noBtn").onclick = function () {
         userAnswers.previousPurchase = false;
