@@ -69,10 +69,10 @@ function startFlowchart() {
     <!-- Two adverts side by side -->
     <div style="display: flex; justify-content: center; gap: 20px;">
         <a href="https://sovrn.co/uephbk1" target="_blank">
-            <img src="logos/advert-image.png" alt="Advert 1" style="width: 225px;">
+            <img src="logos/advert-image.png" alt="Advert 1" style="width: 200px;">
         </a>
         <a href="https://bit.ly/439Hixj" target="_blank">
-            <img src="logos/advert-image2.png" alt="Advert 2" style="width: 225px;">
+            <img src="logos/advert-image2.png" alt="Advert 2" style="width: 200px;">
         </a>
     </div>
     `;
@@ -108,10 +108,10 @@ function askDoseSelection() {
     <!-- Two adverts side by side -->
     <div id="advert-container" style="display: flex; justify-content: center; gap: 20px;">
         <a href="https://sovrn.co/0uosrf5" target="_blank">
-            <img src="logos/advert-image.png" alt="Advert 1" style="width: 225px;">
+            <img src="logos/advert-image.png" alt="Advert 1" style="width: 200px;">
         </a>
         <a href="https://bit.ly/439Hixj" target="_blank">
-            <img src="logos/advert-image2.png" alt="Advert 2" style="width: 225px;">
+            <img src="logos/advert-image2.png" alt="Advert 2" style="width: 200px;">
         </a>
     </div>
     `;
