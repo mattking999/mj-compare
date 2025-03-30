@@ -338,7 +338,7 @@ function createTestingBanner() {
     banner.style.textAlign = "center";
     banner.style.padding = "10px";
     banner.style.zIndex = "1000"; // Make sure it's on top of other elements
-    banner.innerHTML = "By continuing to use this website, you acknowledge and agree to the disclaimer at the bottom of this page.";
+    banner.innerHTML = "By continuing to use this website, you acknowledge and agree to the disclaimer at the bottom of this page. AWIN";
 
     document.body.appendChild(banner);
 }
