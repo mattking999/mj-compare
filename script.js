@@ -180,9 +180,9 @@ function startFlowchart() {
     
     <!-- Hyperlinked Advert -->
     <!--MedExpress (Remove first 4 and last 3 symbols to make active-->
-    <!--<a href="https://sovrn.co/uephbk1" target="_blank">-->
+    <a href="https://sovrn.co/uephbk1" target="_blank">
     <!--Dense (Remove first 4 and last 3 symbols to make active-->
-    <a href="https://bit.ly/439Hixj" target="_blank">
+    <!--<a href="https://bit.ly/439Hixj" target="_blank">-->
         <img src="logos/advert-image.png" alt="Advert Description" style="width: 225px; display: block; margin: 10px auto;">
     </a>
 `;
