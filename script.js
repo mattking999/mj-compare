@@ -183,7 +183,7 @@ function startFlowchart() {
     <a href="https://sovrn.co/uephbk1" target="_blank">
     <!--Dense (Remove first 4 and last 3 symbols to make active-->
     <!--<a href="https://bit.ly/439Hixj" target="_blank">-->
-        <img src="logos/advert-image.png" alt="Advert Description" style="width: 225px; display: block; margin: 10px auto;">
+        <img src="logos/advert-image1.png" alt="Advert Description" style="width: 225px; display: block; margin: 10px auto;">
     </a>
 `;
     flowchart.appendChild(question1);
