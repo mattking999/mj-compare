@@ -243,7 +243,7 @@ function askDoseSelection() {
     <br><br>
 
     <!-- Hyperlinked Advert -->
-    <a href="https://sovrn.co/0uosrf5" target="_blank" id="advert-link">
+    <a href="https://sovrn.co/uephbk1" target="_blank" id="advert-link">
         <img src="logos/advert-image1.png" alt="Advert Description" style="width: 225px; display: block; margin: 10px auto;" id="advert-image">
     </a>
     `;
