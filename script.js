@@ -233,13 +233,13 @@ function askDoseSelection() {
     flowchart.innerHTML = ""; 
     const question = document.createElement("div");
     question.innerHTML = `
-    <h2>Which dose are you looking to compare?</h2>
-    <button class="doseBtn" value="2.5mg" style="background-color: #56585c;">2.5mg</button>
-    <button class="doseBtn" value="5mg" style="background-color: #3f2a5a;">5mg</button>
-    <button class="doseBtn" value="7.5mg" style="background-color: #337e70;">7.5mg</button>
-    <button class="doseBtn" value="10mg" style="background-color: #ba2b7d;">10mg</button>
-    <button class="doseBtn" value="12.5mg" style="background-color: #3674ba;">12.5mg</button>
-    <button class="doseBtn" value="15mg" style="background-color: #ee5243;">15mg</button>
+    <h2>Which option are you looking to compare?</h2>
+    <button class="doseBtn" value="2.5mg" style="background-color: #56585c;">2.5</button>
+    <button class="doseBtn" value="5mg" style="background-color: #3f2a5a;">5</button>
+    <button class="doseBtn" value="7.5mg" style="background-color: #337e70;">7.5</button>
+    <button class="doseBtn" value="10mg" style="background-color: #ba2b7d;">10</button>
+    <button class="doseBtn" value="12.5mg" style="background-color: #3674ba;">12.5</button>
+    <button class="doseBtn" value="15mg" style="background-color: #ee5243;">15</button>
     <br><br>
 
     <!-- Hyperlinked Advert -->
